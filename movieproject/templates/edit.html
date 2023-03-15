@@ -1,0 +1,18 @@
+{% extends 'basefile.html' %}
+{% block body %}
+
+<form  method="post" enctype="multipart/form-data">
+{% csrf_token %}
+    <div class="edit_bg">
+    <div class="container ">
+        <div class="edit_form">
+            <h3>Update Movies</h3>
+ {{form.as_p}}
+     <div>
+    <input class="btn btn-secondary" type="submit">
+     </div>
+        </div>
+    </div>
+    </div>
+</form>
+{% endblock %}

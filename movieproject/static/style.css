@@ -1,0 +1,40 @@
+ body
+ {
+
+background-color:DarkSlateGray;
+
+  }
+
+ .edit_form
+ {
+box-sizing:border-box;
+padding:5px;
+
+display:grid;
+gap:.5rem;
+ }
+ h3
+ {
+ color:White;
+ text-align:center;
+ }
+ input,textarea
+ {
+ background:transparent;
+ background-color:(0,0,0,0);
+
+ }
+.edit_bg
+{
+background-color:DarkSeaGreen;
+}
+h4
+{
+color:WhiteSmoke;
+font-family:fantasy;
+
+}
+h6
+{
+color:AliceBlue;
+}

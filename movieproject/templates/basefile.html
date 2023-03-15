@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'D:\project\productproject\movieproject\static\style.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <b><a class="navbar-brand"  style="color:pink; display:inline; margin-right:50px;" href="">Movie Store</a></b>
+    <a class="navbar-brand" href="{% url 'movieapp:index'%}" style="display:inline; margin-right:50px;">Home</a>
+    <a class="navbar-brand" href="#" style="display:inline; margin-right:50px;">Community</a>
+    <a class="navbar-brand" href="#" style="display:inline; margin-right:50px;">New release</a>
+    <a class= "btn btn-secondary" href="{% url 'movieapp:add_movie' %}" >Add Movie</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+{% block body %}
+
+{% endblock  %}
+
+</body>
+</html>
